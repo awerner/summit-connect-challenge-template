@@ -52,6 +52,7 @@ spec:
         url: ./manifests
         copyWithoutTemplating: []
         values:
+          env: prod
           componentId: summit-connect-challenge
           description: ${{parameters.description}}
           sourceRepository: https://gitlab-gitlab.${{parameters.clusterId}}/${{parameters.gitlabGroup}}/${{parameters.namespace}}-summit-connect-challenge.git
